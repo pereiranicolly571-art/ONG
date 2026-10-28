@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mãos Unidas — Plataforma para ONGs</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<div class="page">
+  <header class="header">
+    <div class="container">
+      <nav class="nav" aria-label="Principal">
+        <a href="#" class="nav__logo">Mãos Unidas</a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+        <ul class="nav__menu" id="menu">
+          <li><a class="nav__link" href="#" aria-current="page">Início</a></li>
+          <li class="dropdown">
+            <button class="nav__link btn" aria-expanded="false" aria-haspopup="true" style="background:none">Projetos ▾</button>
+            <ul class="dropdown__menu">
+              <li><a class="nav__link" href="#projetos">Educação</a></li>
+              <li><a class="nav__link" href="#projetos">Saúde</a></li>
+              <li><a class="nav__link" href="#projetos">Meio ambiente</a></li>
+            </ul>
+          </li>
+          <li><a class="nav__link" href="#componentes">Componentes</a></li>
+          <li><a class="nav__link" href="#voluntario">Seja voluntário</a></li>
+          <li><a class="btn btn--accent btn--sm" href="#doar">Doar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div>
+          <h1>Transforme vidas com a gente</h1>
+          <p>Conectamos ONGs, voluntários e doadores em uma única plataforma.</p>
+          <div class="hero__actions">
+            <a class="btn btn--accent" href="#doar">Quero doar</a>
+            <a class="btn btn--outline" href="#voluntario">Quero ser voluntário</a>
+          </div>
+        </div>
+        <div class="stats">
+          <div><strong>120</strong>projetos</div><div><strong>3.4k</strong>voluntários</div>
+          <div><strong>R$ 1M</strong>captados</div><div><strong>45</strong>ONGs</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="container">
+        <h2 class="section__title">Projetos em destaque</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <img class="card__img" src="img/projeto1.jpg" alt="Crianças em aula de reforço" loading="lazy">
+            <div class="card__body">
+              <div class="tags"><span class="badge badge--educacao">Educação</span><span class="badge badge--urgente">Urgente</span></div>
+              <h3>Reforço Escolar</h3>
+              <p>Aulas gratuitas para crianças de comunidades carentes.</p>
+              <div class="progress" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><div class="progress__bar" style="width:65%"></div></div>
+              <div class="card__footer"><small>65% da meta</small><a class="btn btn--primary btn--sm" href="#doar">Apoiar</a></div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card__img" src="img/projeto2.jpg" alt="Atendimento de saúde comunitário" loading="lazy">
+            <div class="card__body">
+              <span class="badge badge--saude" style="align-self:flex-start">Saúde</span>
+              <h3>Saúde na Comunidade</h3>
+              <p>Mutirões de atendimento médico e odontológico.</p>
+              <div class="progress" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><div class="progress__bar" style="width:40%"></div></div>
+              <div class="card__footer"><small>40% da meta</small><a class="btn btn--primary btn--sm" href="#doar">Apoiar</a></div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card__img" src="img/projeto3.jpg" alt="Voluntários plantando árvores" loading="lazy">
+            <div class="card__body">
+              <span class="badge badge--ambiente" style="align-self:flex-start">Meio ambiente</span>
+              <h3>Reflorestar</h3>
+              <p>Plantio de mudas nativas em áreas degradadas.</p>
+              <div class="progress" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"><div class="progress__bar" style="width:82%"></div></div>
+              <div class="card__footer"><small>82% da meta</small><a class="btn btn--primary btn--sm" href="#doar">Apoiar</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="componentes" style="background:var(--color-white)">
+      <div class="container">
+        <h2 class="section__title">Componentes de interface</h2>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h3 class="mb-2">Botões</h3>
+            <div class="hero__actions" style="margin-top:0">
+              <button class="btn btn--primary">Normal</button>
+              <button class="btn btn--outline">Outline</button>
+              <button class="btn btn--primary" disabled>Desabilitado</button>
+            </div>
+            <h3 class="mt-2 mb-2">Tags e badges</h3>
+            <div class="tags"><span class="badge badge--educacao">Educação</span><span class="tag">#voluntariado</span><span class="tag">#doação</span></div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3 class="mb-2">Feedback</h3>
+            <div class="alert alert--success mb-2" role="alert">Doação registrada com sucesso.</div>
+            <div class="alert alert--danger mb-2" role="alert">Erro ao processar pagamento.</div>
+            <div class="hero__actions" style="margin-top:0">
+              <button class="btn btn--outline btn--sm" data-toast="Projeto salvo nos favoritos!">Mostrar toast</button>
+              <button class="btn btn--outline btn--sm" data-open-modal>Abrir modal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="voluntario">
+      <div class="container"><div class="row"><div class="col-12 col-md-8">
+        <h2 class="mb-2">Seja voluntário</h2>
+        <form class="form" id="form-voluntario" novalidate>
+          <div class="form__group">
+            <label class="form__label" for="nome">Nome completo</label>
+            <input class="form__control" id="nome" required minlength="3" autocomplete="name">
+            <span class="form__error">Informe seu nome (mín. 3 letras).</span>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="email">E-mail</label>
+            <input class="form__control" id="email" type="email" required autocomplete="email">
+            <span class="form__error">Informe um e-mail válido.</span>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="area">Área de interesse</label>
+            <select class="form__control" id="area" required>
+              <option value="">Selecione…</option><option>Educação</option><option>Saúde</option><option>Meio ambiente</option>
+            </select>
+            <span class="form__error">Escolha uma área.</span>
+          </div>
+          <button class="btn btn--primary" type="submit">Enviar cadastro</button>
+        </form>
+      </div></div></div>
+    </section>
+  </main>
+
+  <footer class="footer" id="doar">
+    <div class="container footer__inner">
+      <div><strong>Mãos Unidas</strong><p>Plataforma para ONGs — Entrega II (CSS3)</p></div>
+      <div><a href="#projetos">Projetos</a> · <a href="#voluntario">Voluntariado</a></div>
+    </div>
+  </footer>
+</div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal__dialog">
+    <h3 id="modal-title">Confirmar doação?</h3>
+    <p>Você será redirecionado para o pagamento seguro.</p>
+    <div class="modal__actions">
+      <button class="btn btn--outline" data-close-modal>Cancelar</button>
+      <button class="btn btn--primary" data-close-modal data-toast="Obrigado pela doação!">Confirmar</button>
+    </div>
+  </div>
+</div>
+<div class="toast-container" id="toasts" aria-live="polite"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
